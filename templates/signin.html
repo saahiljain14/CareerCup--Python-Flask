@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en">
+
+<head>
+  	<meta charset="utf-8">
+    <title>CareerCup</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" type="image/x-icon" href="../static/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../static/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/superfish.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/fontello/css/fontello.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+    
+      <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-11097556-8']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+  </head>
+  
+  <body>
+  
+  <header>
+  	<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-3">
+			<a href="../static/index-2.html" id="logo">CareerCup</a>
+		</div>
+		<div class="col-md-9 col-sm-9 col-xs-9">
+			<div class="pull-right"><a href=" signin.html" class="button_top" id="login_top">Sign in</a> <a href=" signup.html" class="button_top hidden-xs" id="apply">Sign Up</a></div>
+            
+		</div>
+	</div>
+</div>
+</header><!-- End header -->
+
+
+<section id="login_bg">
+<div  class="container">
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+		<div id="login">
+			<p class="text-center">
+				<img src="../static/img/login_logo.png" alt="">
+			</p>
+			<hr>
+			<form method="POST">
+            
+				<div class="form-group">
+					<input type="text" class=" form-control " name= "username" placeholder="Username" value="{{request.form.username }}">
+					<span class="input-icon"><i class=" icon-user"></i></span>
+				</div>
+				<div class="form-group" style="margin-bottom:5px;">
+					<input type="text" class=" form-control" placeholder="Password" name= "password" style="margin-bottom:5px;" value="{{request.form.password }}">
+					<span class="input-icon"><i class="icon-lock"></i></span>
+				</div>
+                <br>
+				<input class="button_fullwidth" type="submit" value="Log in">
+                <br>
+                <p class="small">
+                Not a member yet?
+                </p>
+				<a href=" signup.html" class="button_fullwidth-2">Register</a>
+			</form>
+            {% if error %}
+			<p><strong>Error:</strong> {{ error }}
+			{% endif  %}
+		</div>
+	</div>
+</div>
+</div>
+</section> <!-- End login -->
+
+<footer>
+<div class="container" id="nav-footer">
+	<div class="row text-left">
+		<div class="col-md-3 col-sm-3">
+			<h4>Browse</h4>
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Group Discussion</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>Next Courses</h4>
+			<ul>
+				<li><a href="#">Object Oriented Programming</a></li>
+				<li><a href="#">Software Engineering</a></li>
+				<li><a href="#">Computing</a></li>
+				<li><a href="#">Python</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>About Learn</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<ul id="follow_us">
+				<li><a href="#"><i class="icon-facebook"></i></a></li>
+				<li><a href="#"><i class="icon-twitter"></i></a></li>
+				<li><a href="#"><i class=" icon-google"></i></a></li>
+			</ul>
+			<ul>
+				<li><strong class="phone"><i class="icon-phone"></i>+91 9988776054</strong><br><small>Mon - Fri / 9.00AM - 06.00PM</small></li>
+				<li>Questions? careercup13@gmail.com</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+	</div><!-- End row -->
+</div>
+<div id="copy_right">© 2016</div>
+</footer>
+
+<div id="toTop">Back to top</div>
+
+
+<!-- JQUERY -->
+<script src="../static/js/jquery-1.10.2.min.js"></script>
+
+<!-- OTHER JS --> 
+<script src="../static/js/superfish.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/retina.min.js"></script>
+<script src="../static/assets/validate.js"></script>
+<script src="../static/js/jquery.placeholder.js"></script>
+<script src="../static/js/functions.js"></script>
+<script src="../static/js/classie.js"></script>
+<script src="../static/js/uisearch.js"></script>
+<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+</script>
+
+<!-- STYLE SWITCHER  -->
+<link rel="stylesheet" type="text/css" media="screen,projection" href="../static/src/jquery-sticklr-1.4-light-color.css" >
+<script type="text/javascript" src="../static/src/jquery-sticklr-1.4.min.js"></script>
+	
+  </body>
+
+<!-- Mirrored from www.ansonika.com/learn/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 10:54:53 GMT -->
+</html>

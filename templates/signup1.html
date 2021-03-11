@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en">
+
+
+<!-- Mirrored from www.ansonika.com/learn/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 10:55:36 GMT -->
+<head>
+  	<meta charset="utf-8">
+    <title>CareerCup</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" type="image/x-icon" href="../static/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="../static/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="../static/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="../static/img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/superfish.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/fontello/css/fontello.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+    
+
+      <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-11097556-8']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+  </head>
+  <body>
+  
+  <header>
+  	<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-3">
+			<a href="index-2.html" id="logo">CareerCup</a>
+		</div>
+		<div class="col-md-9 col-sm-9 col-xs-9">
+			<div class=" pull-right"><a href="signin1.html" class="button_top" id="login_top">Sign in</a> <a href="signup1.html" class="button_top hidden-xs" id="apply">sign up</a></div>
+		</div>
+	</div>
+</div>
+</header><!-- End header -->
+
+<nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="mobnav-btn"></div>
+			<ul class="sf-menu">
+				<li>
+				<a href="#">Home</a>
+				</li>
+				<li class="normal_drop_down">
+				<a href="#">Course</a>
+				<div class="mobnav-subarrow"></div>
+				<ul>
+                	<li><a href="#">C/C++</a></li>
+                    <li><a href="#">java</a></li>
+                    <li><a href="#">algorithms</a></li>
+                    <li><a href="#">android</a></li>
+                    <li><a href="#">operating system</a></li>
+                    <li><a href="#">mysql</a></li>
+                    </ul>
+				</li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">group discussion</a></li>
+                <li>
+				<a href="#">news</a>
+                <li><a href="#">about us</a></li>
+			</ul>
+            
+            
+		</div>
+	</div><!-- End row -->
+</div><!-- End container -->
+</nav>
+
+<section id="login_bg">
+<div  class="container">
+<div class="row">
+	<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+		<div id="login">
+			<p class="text-center">
+				<img src="../static/img/login_logo.png" alt="">
+			</p>
+			<hr>
+			<form method="POST">
+				<div class="form-group">
+					<input type="text" class=" form-control required"  placeholder="Username" name="username" value="{{request.form.username}}">
+					<span class="input-icon"><i class=" icon-user"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" class=" form-control required" placeholder="Email" name= "email" value="{{request.form.email}}">
+					<span class="input-icon"><i class="icon-email"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" class=" form-control required" id="password1" placeholder="Password" name= "password" value="{{request.form.password}}">
+					<span class="input-icon"><i class=" icon-lock"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" class=" form-control required" id="password2" placeholder="Confirm password" name= "confirmpassword" value="{{request.form.confirmpassword}}">
+					<span class="input-icon"><i class=" icon-lock"></i></span>
+				</div>
+                <div id="pass-info" class="clearfix"></div>
+				<button type="submit" class="button_fullwidth">Create an account</button>
+			</form>
+			<div>
+			{% if error %}
+			<p class="error"><strong>Error:</strong> {{ error }}
+			{% endif  %}
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</section><!-- End register -->
+
+<footer>
+
+<div class="container" id="nav-footer">
+	<div class="row text-left">
+		<div class="col-md-3 col-sm-3">
+			<h4>Browse</h4>
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Group Discussion</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>Next Courses</h4>
+			<ul>
+				<li><a href="#">Object Oriented Programming</a></li>
+				<li><a href="#">Software Engineering</a></li>
+				<li><a href="#">Computing</a></li>
+				<li><a href="#">Python</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>About Learn</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<ul id="follow_us">
+				<li><a href="#"><i class="icon-facebook"></i></a></li>
+				<li><a href="#"><i class="icon-twitter"></i></a></li>
+				<li><a href="#"><i class=" icon-google"></i></a></li>
+			</ul>
+			<ul>
+				<li><strong class="phone">+91 9988776054</strong><br><small>Mon - Fri / 9.00AM - 06.00PM</small></li>
+				<li>Questions? <a href="#">questions@domain.com</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+	</div><!-- End row -->
+</div>
+<div id="copy_right">© 2016</div>
+</footer>
+
+<div id="toTop">Back to top</div>
+
+<!-- JQUERY -->
+<script src="../static/js/jquery-1.10.2.min.js"></script>
+<!-- OTHER JS --> 
+<script src="../static/js/superfish.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/retina.min.js"></script>
+<script src="../static/js/pw_strenght.js"></script>
+<script src="../static/assets/validate.js"></script>
+<script src="../static/js/jquery.placeholder.js"></script>
+<script src="../static/js/functions.js"></script>
+<script src="../static/js/classie.js"></script>
+<script src="../static/js/uisearch.js"></script>
+<script>new UISearch( document.getElementById( 'sb-search' ) );</script>
+
+<!-- STYLE SWITCHER  -->
+<link rel="stylesheet" type="text/css" media="screen,projection" href="../static/src/jquery-sticklr-1.4-light-color.css" >
+<script type="text/javascript" src="../static/src/jquery-sticklr-1.4.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $('#example-1').sticklr({
+                animate         : true,
+                showOn		    : 'hover'
+			});
+	    });
+	</script>
+<ul id="example-1" class="sticklr">
+        <li><a href="#" class="icon-color"></a>
+            <ul>
+                <li class="sticklr-title"><a href="#">Change Color</a></li>
+                <li>
+                    <a href="index-2.html">Color scheme default</a>
+                </li>
+                 <li>
+                    <a href="../static/color_scheme_2/fullwidth/index.html">Color scheme 2</a>
+                </li>
+                 <li>
+                    <a href="../static/color_scheme_3/fullwidth/index.html">Color scheme 3</a>
+                </li>
+            </ul>
+        </li>
+         <li><a href="#" class="icon-purchase"></a>
+            <ul>
+                <li class="sticklr-title"><a href="#">Layout </a></li>
+                <li>
+                    <a href="index-2.html" >Full Width</a>
+                </li> 
+                <li>
+                    <a href="../static/boxed/index.html">Boxed</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+  </body>
+
+<!-- Mirrored from www.ansonika.com/learn/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 10:55:37 GMT -->
+</html>

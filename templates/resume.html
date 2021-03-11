@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="EN-US" itemscope itemtype="http://schema.org/Article">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head><!-- INSERT BY TRANSFORMER. SELECTOR=head,LOCATION=prepend --><script>(function(){function E(a,b){!1==p(a,this,function(c,d){f[f.length]={type:'insert',newNode:a,before:b,me:d,config:c};a.setAttribute('data-yo-src',a.getAttribute('data-yo-src'))})?this.yo_ib(a,b):domCompleteTriggered&&q(f.length-1)}function F(a){!1==p(a,this,function(b,c){f[f.length]={type:'append',newNode:a,before:c,me:c,config:b};a.getAttribute&&a.setAttribute('data-yo-src',a.getAttribute('data-yo-src'))})?this.yo_ac(a):domCompleteTriggered&&q(f.length-1)}function G(a){k(Object.defineProperty)&&k(a.src)&& Object.defineProperty(a,'src',{get:function(){return a.getAttribute('data-yo-src')},set:function(b){a.setAttribute('src',b)}});a.yo_gAttr=k(a.yo_gAttr)?a.yo_gAttr:a.getAttribute;a.getAttribute=function(a){return this.yo_gAttr('src'==a?'data-yo-src':a)}}function H(a){k(Object.defineProperty)&&k(a.innerHTML)&&(a.yo_innerHTML=k(a.yo_innerHTML)?a.yo_innerHTML:a.innerHTML,Object.defineProperty(a,'innerHTML',{get:function(){l('innerHTML - get - '+a.id?a.id:a.className+a.yo_innerHTML);return a.yo_innerHTML}, set:function(b){l('innerHTML - get - '+a.id?a.id:a.className+', '+b);!1==p(a,a,function(a,d){f[f.length]={type:'inner',newNode:b,before:d,me:d,config:a}})?u(a,b):domCompleteTriggered&&q(f.length-1)}}))}function p(a,b,c){var d=a.nodeName.toLowerCase(),h=null,e=!1;if('script'==d||'iframe'==d){if(h=C(a),null!=h&&k(h.onLoad)&&!k(b.onLoad)&&n(a,'load',h.onLoad),null==h||'none'!=h.delayType)c(h,b),e=!0}else if(h=C(b),null==h||'none'!=h.delayType)c(h,b),h.before=b,e=!0;l(a.nodeName+' '+a.src+' is '+(e?'': 'NOT')+' delayed loaded');!1==e&&null!=h&&k(h.onBefore)&&(l(a.nodeName+' onBefore '+a.src),h.onBefore());return e}function v(a){a&&(a.yo_ac=k(a.yo_ac)?a.yo_ac:a.appendChild,a.yo_ib=k(a.yo_ib)?a.yo_ib:a.insertBefore,a.appendChild=F,a.insertBefore=E)}function C(a){var b=a.src;if(null==b||0==b.length)return{delayType:'none'};for(var c=0;c<e.resources.length;c++)if(-1!=b.indexOf(e.resources[c].url))return l('Found configuration for '+b+' delayType '+e.resources[c].delayType),'empty'==e.resources[c].delayType&& (a.src=null==e.resources[c].delaySrc?'data:text/javascript;plain,//':e.resources[c].delaySrc,e.resources[c].delayType='none'),e.resources[c];l('Did NOT find configuration for '+b+' checking local configuration. ');return null!=a.delayType?('empty'==a.delayType&&(a.src=null==a.delaySrc?'data:text/javascript;plain,//':a.delaySrc,a.delayType='none'),{delayType:a.delayType,delayTime:a.delayValue,delayEvent:a.delayValue,delayPosition:a.delayValue}):{delayType:e.defaultType,delayTime:e.defaultDelay}}function l(a){e.log&& k(console)&&k(console.log)&&console.log('yo_AfterShocK: '+a)}function k(a){return'undefined'!==typeof a}function w(a,b,c){c=c.currentTarget;if(-1===r(c,_targets)){var d=c.getAttribute('data-yo-src'),e=c.getAttribute('data-yo-delayType'),g=c.getAttribute('data-yo-delayValue');f[f.length]={type:b,newNode:a,before:c,me:c.parentNode,config:{delayType:e,delayTime:g,delayPosition:g,delayEvent:g}};_targets[_targets.length]=c;s(c,'load');s(c,'error');l(c.nodeName+'Loader( '+d+', 0, '+e+', '+g+')')}}function n(a, b,c){a.attachEvent?a.attachEvent&&a.attachEvent('on'+b,c):a.addEventListener(b,c,!1)}function s(a,b,c){a.detachEvent?a.detachEvent&&a.detachEvent('on'+b,c):a.removeEventListener(b,c,!1)}function x(a){if(k(f[a])){var b=f[a].me,c=f[a].newNode,d=f[a].type,e=f[a].before,g=f[a].config;g.delayType='none';l('Injecting '+c.src+', by '+d+' into the DOM now.');k(g.onBefore)&&(l('Executing onBefore '),g.onBefore());'insert'==d?b.yo_ib(c,e):'append'==d?b.yo_ac(c):'replace'==d?b.replaceChild(c,e):'src'==d?e.src= c.getAttribute('data-yo-src'):'style'==d?c.style['background-image']='url('+c.getAttribute('data-yo-src')+')':'inner'==d?'replace'==f[a].how?u(e,c):t(e,c,f[a].how):'xhr'==d&&xhr_send.apply(f[a].xhr,f[a].xhr._yo.send_args[0])}}function y(a){for(a=0;a<f.length;a++)if(z(f[a],'lazy')){var b=f[a].config.delayPosition;if('string'===typeof b)b=D(b);else if(null==b||k(b))b=f[a].before;if(null!=b){l('Found Lazy '+b+', '+b+' because it is visible');var c=a;winH=m.innerHeight||g.documentElement.clientHeight|| g.body.clientHeight;if(!('getBoundingClientRect'in g.documentElement)||I(g.documentElement,b)&&b.getBoundingClientRect().top<winH+offset)l('showIfVisible is visible '+c+', '+b),x(c)}}}function q(a){var b=f[a];if(z(b,'defer')){var c=null!=b.config?b.config.delayTime:e.defaultDelay;l('Loading '+b.newNode.src+' via timer event. It will load in '+c);setTimeout('yo_afterShock('+a+');',c)}else z(b,'lazy')&&yo_displayNow()}function J(){e.write&&(e.write.filters||e.write.delayers)&&!k(g.yo_write)&&(g.yo_write= g.write,g.write=function(a){if(e.write.filters)for(var b=0;b<e.write.filters.length;b++)a=a.replace(e.writeFilters[b],'');if(e.write.delayers){for(var c=!1,b=0;b<e.write.delayers.length;b++){var d=e.write.delayers[b];if(a.match(d.start)||1==d.state)if(c=!0,d.string?d.string+=a:(d.state=1,d.string=a),!k(d.end)||a.match(d.end))k(d.delayType)&&'none'!=d.delayType?(f[f.length]={type:'inner',how:d.how,newNode:a,before:g.getElementById(d.selector),me:g.getElementById(d.selector),config:d},domCompleteTriggered&& q(f.length-1)):t(g.getElementById(d.selector),d.string,d.how),d.state=2,d.string=''}!1==c&&g.yo_write(a)}else g.yo_write(a);l('write hander = '+a)})}function r(a,b,c){var d;if(b){if(Array.prototype.indexOf)return Array.prototype.indexOf.call(b,a,c);d=b.length;for(c=c?0>c?Math.max(0,d+c):c:0;c<d;c++)if(c in b&&b[c]===a)return c}return-1}function u(a,b){for(;a.firstChild;)a.removeChild(a.firstChild);t(a,b)}function t(a,b,c){var d=g.createElement('div');d.innerHTML='string'===typeof b?b:b.innerHTML; for(b=d.childNodes;0<b.length;)'insert'==c?a.parentNode.insertBefore(d.removeChild(b[0]),a):a.appendChild(d.removeChild(b[0]));return this}function D(a){return k($)&&!0==e.jquery?$(a)[0]:g.getElementById(a)}function K(a,b,c,d){n(a,b[0],function(a){l('Loading '+f[c].before.src+' via event handler '+d.delayEvent);x(c);s(a.currentTarget,b[0],p)})}function A(){if(e.scan)for(var a=0,b=e.scan.length;a<b;a++){var c=e.scan[a],d=g.getElementsByTagName(c),f=void 0;l('Find all '+c+' tags in the document.'); for(var k=0,L=d.length;k<L;k+=1){var f=d[k],m=f.getAttribute('data-yo-src');m?(l('Found a '+c+', src = '+m+' tag to handle with AfterShocK.'),w(f,f.src?'src':'style',{currentTarget:f}),G(f)):'script'==c&&'yo/sequence'==f.getAttribute('type')&&(l('Found a '+c+', yo/sequence tag to handle with AfterShocK.'),yo_sequenceContent(f))}y();setTimeout(B,25)}}function z(a,b){return null!=a&&null!=a.config&&a.config.delayType==b}var g=document,m=window,f=[],e={defaultDelay:5E3,defaultType:'none',fixLinks:{oldHost:'', newHost:''},log:!0,throttle:20,jquery:!1,sequenceXHR:!1,scan:['img'],resources:[],write:{}};_targets=[];winH=1E3;offset=100;var B=function(a,b){var c=0;return function(){var d=+new Date;d-c<b||(c=d,a.apply(this,arguments))}}(y,20);domCompleteTriggered=!1;xhr_open=XMLHttpRequest.prototype.open;xhr_send=XMLHttpRequest.prototype.send;var I=g.documentElement.compareDocumentPosition?function(a,b){return!!(a.compareDocumentPosition(b)&16)}:g.documentElement.contains?function(a,b){return a!==b&&(a.contains? a.contains(b):!1)}:function(a,b){for(;b=b.parentNode;)if(b===a)return!0;return!1};n(m,'scroll',B);n(m,'resize',B);n(m,'load',function(){domCompleteTriggered=!0;for(var a=0;a<f.length;a++)q(a)});v(g.getElementsByTagName('script')[0].parentNode);(function(a){function b(c){if('readystatechange'!==c.type||'complete'===g.readyState)if(s('load'===c.type?m:g,c.type,b),!d){d=!0;a();yo_displayNow();for(c=0;c<f.length;c++){var h=f[c].config;if(h&&'event'==h.delayType){l('Event handling '+f[c].before.src+' '+ h.delayEvent);var n=h.delayEvent.split(' ');K(D(n[1]),n,c,h)}}if(k(e.fixLinks)&&null!=e.fixLinks){h=g.getElementsByTagName('a');for(c=0;c<h.length;c++)n=h[c].href,-1!=n.indexOf(e.fixLinks.oldHost)&&(h[c].href=n.replace(e.fixLinks.oldHost,e.fixLinks.newHost));h=g.getElementsByTagName('form');for(c=0;c<h.length;c++)n=h[c].action,-1!=n.indexOf(e.fixLinks.oldHost)&&(h[c].action=n.replace(e.fixLinks.oldHost,e.fixLinks.newHost))}}}function c(){try{g.documentElement.doScroll('left')}catch(a){setTimeout(c, 50);return}b('poll')}var d=!1,h=!0;if('complete'===g.readyState)a();else{if(g.createEventObject&&g.documentElement.doScroll){try{h=!m.frameElement}catch(p){}h&&c()}n(g,'DOMContentLoaded',b);n(g,'readystatechange',b);n(m,'load',b)}})(A);m.yo_afterShock=x;m.yo_configureAfterShock=function(a){for(var b in a)e[b]=a[b];J();!0==e.sequenceXHR&&(XMLHttpRequest.prototype.open=xhrOpen,XMLHttpRequest.prototype.send=xhrSend)};m.yo_nodeWatch=v;m.yo_nodeClearWatch=function(a){k(a.yo_ib)&&(me.insertBefore=me.yo_ib); k(a.yo_ac)&&(me.appendChild=me.yo_ac)};m.yo_imageLoader=function(a){w(a.currentTarget,'src',a)};m.yo_frameLoader=function(a,b,c,d){w(event.currentTarget,'src',event)};m.yo_scanTags=A;m.yo_displayNow=function(){l('Handle the display of all visible tags up to now.');A();y({})};m.yo_sequenceContent=function(a){if(-1===r(a,_targets)){a='string'===typeof a?g.getElementById(a):a;var b=g.getElementById(a.getAttribute('data-yo-location')),c=a.getAttribute('data-yo-how'),d=a.getAttribute('data-yo-delayType'), e=a.getAttribute('data-yo-delayValue');null==b&&(b=a,c='insert');if(null==d||'none'==d)null==c||'replace'==c?u(b,a.innerHTML):t(b,a.innerHTML,c);else{if(-1!==r(a,_targets))return;l('Sequence a script = '+a.id+', type '+d);f[f.length]={type:'inner',how:c,newNode:a,before:b,me:a,config:{delayType:d,delayTime:e,delayPosition:e,delayEvent:e}}}_targets[_targets.length]=a}};m.yo_sequenceDom=function(a){if(-1===r(a,_targets)){a='string'===typeof a?g.getElementById(a):a;var b=a.getAttribute('data-yo-delayType'), c=a.getAttribute('data-yo-delayValue');a.src=a.id+a.className;e.resources[e.resources.length]={url:a.id+a.className,delayType:b,delayTime:c,delayEvent:c,delayPosition:c};H(a);v(a);_targets[_targets.length]=a}};m.yo_scriptLoader=function(a,b,c,d,f){e.resources[e.resources.length]={url:a,delayType:b,delayTime:c,delayEvent:c,delayPosition:c};b=g.createElement('script');b.type='text/javascript';b.async=!0;k(d)&&(b.onload=d);k(f)&&(b.onerror=f);b.src=a;a=g.getElementsByTagName('script')[0];a.parentNode.insertBefore(b, a)};xhrOpen=function(a,b,c,d,f){this._yo={open_args:arguments,async:!1===c?!1:!0};l('xhr open = '+b+', async '+c);-1!=b.indexOf(e.fixLinks.oldHost)&&(b=b.replace(e.fixLinks.oldHost,e.fixLinks.newHost),l('overriding the old host in XHR open = '+b));return xhr_open.apply(this,arguments)};xhrSend=function(a){if(!0!==this._yo.async)return xhr_send.apply(this,args);var b=this;this._yo.send_args=arguments;node={src:this._yo.open_args[1],nodeName:'xhr'};if(!1==p(node,node,function(a,d){f[f.length]={type:'xhr', xhr:b,newNode:d,config:a}}))return l('xhr send is NOT defered, '+node.src),xhr_send.apply(this,arguments);l('xhr send is defered, '+node.src+', '+f[f.length].config.delayType)}})();</script><script>window.yo_configureAfterShock({fixLinks : null, defaultType : 'none', scan : ['script', 'iframe'], log : true,defaultDelay : 50,resources : [{url:'platform.js', delayType: 'defer', delayTime: '1500'}]});</script><script>yo_configureAfterShock({log:false});</script>
+<script type="text/javascript">
+function yo_loader(url){ 
+ 
+ try{(new Image()).src = url;}catch(e){ } 
+ }
+
+</script>
+<meta name="language" content="EN-US">
+<meta property="og:locale" content="EN_US">
+<meta name="robots" content="NOODP">
+<meta name="rating" content="General">
+<meta charset="utf-8">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="author" content="LiveCareer">
+<meta name="publisher" content="LiveCareer.com">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../static/resume-builder.html" rel="canonical" /><link rel="alternate" hreflang="en-gb" href="http://www.livecareer.co.uk/cv-builder" /><link rel="alternate" hreflang="en-us" href="../static/resume-builder.html" />	
+
+	
+
+<title>CareerCup</title>
+<meta name="Description" content="
+	Resume Builder is the fastest, easiest and most effective way to build an impressive resume. Our Resume Builder lets you create a resume in minutes!
+">	
+<meta name="Keywords" content="
+	free resume builder, resume maker, create a resume, make a resume
+">				
+<meta property="og:title" content="
+	Resume Builder | Free Resume Builder | LiveCareer
+">	
+<meta property="og:description" content="
+	Resume Builder is the fastest, easiest and most effective way to build an impressive resume. Our Resume Builder lets you create a resume in minutes!
+">
+
+	
+<meta property="og:type" content="article" />
+<link rel="apple-touch-icon" sizes="57x57" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-57x57a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="60x60" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-60x60a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="72x72" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-72x72a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="76x76" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-76x76a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="114x114" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-114x114a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="120x120" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-120x120a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="144x144" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-144x144a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="152x152" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-152x152a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="apple-touch-icon" sizes="180x180" href="../cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v_12.2dc/images/uploaded/apple-touch-icon-180x180a8bd.png?yocs=_&amp;yoloc=ap">
+		<link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
+			
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../cloud.typography.com/7057494/6790952/css/fonts.html" />
+	<link rel="stylesheet" href="../static/css/lcr.css?yocs=_&yoloc=ap">
+<link rel="stylesheet" href="../static/css/lcr-media.css?yocs=_&yoloc=ap">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/cms/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v~12.2dc/cms/css/lcr.css?yocs=_&amp;yoloc=ap" />
+<link rel="stylesheet" href="//cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v~12.2dc/cms/css/lcr-media.css?yocs=_&amp;yoloc=ap" />
+<link rel="stylesheet" href="//cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v~12.2dc/cms/css/lcr-ie8.css?yocs=_&amp;yoloc=ap" />
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<![endif]-->	
+<script type="text/javascript" src="../static/js/swfobject.js"> </script>
+<script src="../static/js/jquery-1.8.3.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script> 
+
+	<script type="text/javascript" src="../static/js/9ba4541e3348902a7c8e59d11c2d9c60Y$Ca8bd.js?yocs=_&yoloc=ap"></script>
+	
+<!--[if lt IE 9]>
+<script src="//cdn-ap-ec.yottaa.net/52e2a59b63e31e54d4003d89/www.livecareer.com/v~12.2dc/cms/scripts/lc-main-ie8.js?yocs=_&amp;yoloc=ap"></script>
+<![endif]-->	
+<script src="../static/js/112265713.js"></script>
+<script src="../static/js/AC_OETags.js?yocs=_&yoloc=ap"></script>
+	
+
+<script>
+ var _prum = [['id', '522f27b5abe53d7946000000'],
+              ['mark', 'firstbyte', (new Date()).getTime()]];
+ (function() {
+     var s = document.getElementsByTagName('script')[0]
+       , p = document.createElement('script');
+     p.async = 'async';
+     p.src = '../rum-static.pingdom.net/prum.min.js';
+     s.parentNode.insertBefore(p, s);
+ })();
+	
+</script>
+	
+	<script type="text/javascript">
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+  analytics.load("IpbwZ8lIp6");
+  analytics.page()
+  }}();
+		FireSegmentIOTrack("Landing Page", { "Portal Code": "LC-CMS" });
+</script>
+
+	<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "LiveCareer",
+  "alternateName" : "Live Career",
+ "address": [{
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco, CA",
+    "postalCode": "94102",
+    "streetAddress": "1 Hallidie Plaza Suite 600"
+  }],
+  "logo" : "https://www.livecareer.com/images/uploaded/logo.png",
+  "url" : [ 
+  		"https://www.livecareer.com",
+        "https://jobs.livecareer.com/",
+        "http://resumes.livecareer.com/"
+        ],
+  "sameAs" : [
+          "https://www.facebook.com/LiveCareer",
+          "https://twitter.com/LiveCareer",
+          "https://www.linkedin.com/company/livecareer",
+          "https://plus.google.com/+Livecareer"
+   ],
+   "contactPoint" : [
+    { "@type" : "ContactPoint",
+      "telephone" : "+1-800-652-8430 FREE",
+      "contactType" : "customer service"
+    } ]
+}
+</script>
+	
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/superfish.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="../static/fontello/css/fontello.css" rel="stylesheet">    
+</head>
+
+<!-- END OF YOTTAA PREFETCH LOCATION=<body> --><body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-3P2N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-3P2N');</script>
+<!-- End Google Tag Manager -->
+<header>
+  	<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-3">
+			<a href=" index.html" id="logo">CareerCup</a>
+		</div>
+		<div class="col-md-9 col-sm-9 col-xs-9">
+			<div class=" pull-right"><a href="signin.html" class="button_top hidden-xs" id="apply">Sign out</a></div>
+            </div>
+	</div>
+</div>
+</header><!-- End header -->
+<nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="mobnav-btn"></div>
+			<ul class="sf-menu">
+				<li class="normal_drop_down">
+				<a href="#">Home</a>
+				</li>
+				<li class="normal_drop_down">
+				<a href="../static/course_detail_page_txt.html">Course</a>
+				<div class="mobnav-subarrow"></div>
+				<ul>
+                	<li><a href=" C_details.html">C/C++</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Algorithms</a></li>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">Operating Systems</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    
+				</ul>
+				</li>
+                <li><a href="#">Aptitude</a></li>
+                <li><a href="#">General Knowledge</a></li>
+				<li><a href=" resume.html">Resume</a></li>
+				<li><a href="#">Group Discussion</a></li>
+                <li><a href="#">News</a></li>
+               <li><a href="#about">About Us</a></li>
+			</ul>
+            
+            
+		</div>
+	</div><!-- End row -->
+</div><!-- End container -->
+</nav>
+	<div class="page-main">
+<div class="banner-section rb-banner">
+<div class="container fade0">
+<h1 class="h1">Get the resume you need to land the job!</h1>
+<p class="p-lg hidden-xs">Resume Builder makes it fast and easy to create the powerful, professional <br /> resume hiring managers are looking for.</p>
+<a href=" apply_2.html" class="btn btn-primary btn-lg">create  a  resume</a></div>
+</div>
+<!-- banner section ends here --> <!-- clients section starts here -->
+<div class="clients-sec rb-clients">
+<div class="container">
+
+</div>
+</div>
+<!-- clients section ends here -->
+<div class="highlight para-section about-product">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h2 class="h2 pb10">CareerCup's Resume Builder</h2>
+<p>CareerCup's Resume Builder is the fastest, most efficient way to build an effective resume. If you want to land a great job, you'll need a great resume that stands out from the crowd. CareerCup's professionally written resume examples will help you create an eye-catching resume that leads to more job offers. We'll guide you step by step through the process, so you can build an impressive resume that will make employers want to know more. Ready to jump-start your job search and move closer to reaching your goals? Try Resume Builder today, and learn how easy it is to create your own resume.</p>
+
+</div>
+<div class="col-md-6"><img class="img-resp" src="../static/img/rb-laptopa8bd.png?yocs=_&yoloc=ap"/></div>
+</div>
+</div>
+</div>
+<!-- rb section ends here -->
+<div class="section testimonial text-center">
+<div class="container">
+<h2 class="h2 text-center">Resume Builder Success Stories</h2>
+<div data-ride="carousel" class="carousel slide" id="testimonal-carousel">
+<div class="carousel-inner">
+<div class="item active">
+<blockquote>
+<p>I just want to let you know how awesome your site and resume builder was. It has been 25 years since I had to do a resume and it was so easy with CareerCup. So again, thank you and I am really pleased to have found your site. -B.R.</p>
+</blockquote>
+</div>
+<div class="item">
+<blockquote>
+<p>I just used your resume builder program to build a resume. I had my first interview this morning, and landed the job this afternoon. The resume looked fantastic, and I am glad I went to your website. -Robin</p>
+</blockquote>
+</div>
+</div>
+<ul class="carousel-indicators grey">
+<li class="active"> </li>
+<li> </li>
+</ul>
+</div>
+</div>
+</div>
+<!-- testimonial section ends here -->
+<div class="rb-features">
+<h2 class="h2 text-center">Features of Resume Builder</h2>
+<br>
+<div class="container">
+<ul class="feature-list col-md-3 col-sm-3 col-xs-12">
+<br>
+<br>
+<br>
+<br>
+<li class="pos1"><span class="list-cont">Edit, email and download your resume all from one place</span><span class="hidden-xs ic-leftStyle"> </span></li>
+
+</ul>
+<div class="col-md-6 col-sm-6 col-xs-12"><img class="img-resp" src="../static/img/bg.png?yocs=_&yoloc=ap"/></div>
+<ul class="feature-list col-md-3 col-sm-3 col-xs-12 right hidden-xs">
+<li class="pos2"><span class="hidden-xs ic-rightStyle"> </span><span class="list-cont">One-click designs for an impressive, professional look.</span></li>
+</ul>
+</div>
+</div>
+<!-- Rb features section ends here -->
+<div class="section text-center">
+<div class="container"><a href=" apply_2.html" class="btn btn-primary btn-lg text-uppercase">create a resume</a></div>
+</div>
+</div>
+
+	<!-- Insert default "BodyContentSub" markup here --><!-- Insert default "BodyContent" markup here -->
+
+	<footer>
+<div class="container" id="nav-footer">
+	<div class="row text-left">
+		<div class="col-md-3 col-sm-3">
+			<h4>Browse</h4>
+			<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Resume</a></li>
+				<li><a href="#">Group Discussion</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>Next Courses</h4>
+			<ul>
+				<li><a href="#">Object Oriented Programming</a></li>
+				<li><a href="#">Software Engineering</a></li>
+				<li><a href="#">Computing</a></li>
+				<li><a href="#">Python</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			<h4>About Learn</h4>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">Terms and conditions</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+		<div class="col-md-3 col-sm-3">
+			
+			<ul>
+				<li><strong class="phone">+91 9988776054</strong><br><small>Mon - Fri / 9.00AM - 06.00PM</small></li>
+				<li>Questions? careercup13@gmail.com</a></li>
+			</ul>
+		</div><!-- End col-md-4 -->
+	</div><!-- End row -->
+</div>
+<div id="copy_right">© 2016</div>
+</footer>
+
+<div id="toTop">Back to top</div>
+
+<!-- JQUERY -->
+<script src="../static/js/jquery-1.10.2.min.js"></script>
+<!-- jQuery REVOLUTION Slider  -->
+<script type="text/javascript" src="../static/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="../static/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript">
+
+		var revapi;
+
+		jQuery(document).ready(function() {
+
+			   revapi = jQuery('.tp-banner').revolution(
+				{
+					delay:9000,
+					startwidth:1700,
+					startheight:600,
+					hideThumbs:true,
+					navigationType:"none",
+					fullWidth:"on",
+					forceFullWidth:"on"
+				});
+
+		});	//ready
+
+	</script>
+
+<!-- OTHER JS --> 
+<script src="../static/js/superfish.js"></script>
+<script src="../static/js/retina.min.js"></script>
+<script src="../static/js/validate.js"></script>
+<script src="../static/js/jquery.placeholder.js"></script>
+<script src="../static/js/functions.js"></script>
+<script src="../static/js/classie.js"></script>
+<script src="../static/js/uisearch.js"></script>
+<script src="../static/js/Untitled-1.js"></script>
+<script>new UISearch( document.getElementById( 'sb-search' ) );</script>
+
+<!-- STYLE SWITCHER  -->
+<link rel="stylesheet" type="text/css" media="screen,projection" href="../static/css/jquery-sticklr-1.4-light-color.css" >
+<script type="text/javascript" src="../static/js/jquery-sticklr-1.4.min.js"></script>
+	</body>
+
+<!-- Mirrored from www.livecareer.com/resume-builder by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Mar 2016 17:24:13 GMT -->
+</html>
